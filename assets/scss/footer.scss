@@ -1,0 +1,309 @@
+// footer
+footer {
+    background: #0C0919;
+    padding: 52px 0 112px 0;
+
+    .footer-header {
+        margin-bottom: 40px;
+        max-width: 698px;
+
+        h2 {
+            font-size: 25px;
+            line-height: 35px;
+            letter-spacing: 0.02em;
+            color: #FAF7F2;
+            margin-bottom: 0;
+
+        }
+
+        h3 {
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: -0.02em;
+        }
+    }
+
+    .footer-form {
+        margin-bottom: 52px;
+
+        form {
+            .form-group {
+                margin-bottom: 44px;
+                position: relative;
+
+                label {
+                    font-size: 18px;
+                    line-height: 151%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 100%;
+                    margin: 0;
+                    transform: translateY(calc(-100% - 7px));
+                    transition: all .15s ease-out;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30.6px;
+                    color: #85848C;
+
+                    span {
+                        margin-left: 3px;
+                        color: #FF1654;
+                    }
+                }
+
+                &.minify-label {
+                    label {
+                        bottom: auto;
+                        top: 0;
+                        font-size: 12px;
+                        line-height: 18.12px;
+                    }
+
+                    &.has-error {
+                        input {
+                            color: #ff1654;
+                        }
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                    width: 100%;
+                    height: auto;
+                }
+
+                ::-webkit-input-placeholder {
+                    color: #fff;
+                }
+
+                ::-moz-placeholder {
+                    color: #fff;
+                }
+
+                :-ms-input-placeholder {
+                    color: #fff;
+                }
+
+                :-moz-placeholder {
+                    color: #fff;
+                }
+
+                &:focus-within {
+                    label {
+                        color: #FAF7F2;
+                    }
+                }
+
+
+
+                &.has-error {
+
+                    input,
+                    textarea,
+                    select {
+                        border-color: #ff1654;
+                    }
+
+                    label {
+                        color: #ff1654;
+                    }
+                }
+
+                input,
+                textarea,
+                select {
+                    border: 0;
+                    padding: 0;
+                    border: 0;
+                    z-index: 1;
+                    position: relative;
+                    height: 44px;
+                    color: #FAF7F2;
+                    background: transparent;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #85848C;
+                    font-size: 18px;
+                    line-height: 30.6px;
+
+                    &:focus {
+                        box-shadow: none;
+                        outline: 0;
+                        border-bottom: 1px solid #fff;
+                    }
+
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus,
+                    &:-webkit-autofill:active {
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: #ffffff;
+                        transition: background-color 5000s ease-in-out 0s;
+                        box-shadow: inset 0 0 20px 20px #23232329;
+                    }
+                }
+            }
+
+            .btn-cta {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer-contact {
+        text-align: center;
+
+        h3 {
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            color: #fff;
+        }
+
+
+        .fc-info {
+
+            p,
+            a {
+                font-size: 16px;
+                line-height: 30.4px;
+                letter-spacing: -0.02em;
+                color: #FFFFFF80;
+                text-decoration: none;
+            }
+
+            .fci-x {
+                margin-left: 36px;
+            }
+        }
+    }
+
+    .f-logo {
+        margin-bottom: 54px;
+        text-align: center;
+    }
+
+    .footer-copyright {
+        padding-top: 20px;
+        line-height: 151%;
+
+        .copyright {
+            font-size: 14px;
+        }
+
+        .pp-text {
+            font-size: 12px;
+        }
+    }
+
+    .manageButtonPos {
+        button {
+            float: right;
+            margin-right: 80px;
+            border: 0 !important;
+            text-align: right !important;
+            margin-top: -40px;
+        }
+    }
+
+    .hideOnSuccess {
+        &.hOS-on {
+            opacity: .1;
+        }
+    }
+
+    .showOnSuccess {
+        &.sOS-on {
+            display: block !important;
+        }
+    }
+
+    .auto-increase-textarea {
+        display: grid;
+
+        &::after {
+            content: attr(data-replicated-value) " ";
+            white-space: pre-wrap;
+            visibility: hidden;
+        }
+
+        &>textarea {
+            resize: none;
+            overflow: hidden;
+        }
+    }
+
+    .auto-increase-textarea>textarea,
+    .auto-increase-textarea::after {
+        border: 1px solid #000;
+        padding: .5rem;
+        font: inherit;
+        grid-area: 1/1/2/2;
+    }
+}
+
+
+
+@media screen and (min-width: 992px) {
+    footer {
+        &.footer {
+            padding: 84px 0;
+
+
+            h2 {
+                font-size: 50px;
+                line-height: 70px;
+            }
+
+            .footer-header {
+                margin-bottom: 96px;
+
+            }
+
+            .footer-form {
+                .form-group {
+                    margin-bottom: 48px;
+                    padding-right: 56px;
+                }
+
+                form {
+                    .btn-cta {
+                        width: auto;
+                    }
+                }
+
+            }
+
+            .footer-contact {
+                text-align: start;
+
+                .fc-info {
+                    margin-bottom: 52px;
+
+                }
+            }
+
+            .f-logo {
+                margin-bottom: 152px;
+                text-align: start;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        &.footer {
+            .footer-contact {
+                padding-left: 164px;
+            }
+
+            .f-logo {
+                padding-left: 164px;
+            }
+
+        }
+    }
+}

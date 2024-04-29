@@ -1,0 +1,14 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "sass file for viium",
+  "author": "Viium",
+  "scripts": {
+    "sass-dev": "sass --no-source-map --watch --update --style expanded ./:../css",
+    "sass-prod": "sass --no-source-map --style expanded ./:../css"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.74.1"
+  }
+}

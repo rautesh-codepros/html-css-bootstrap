@@ -1,0 +1,9 @@
+image: atlassian/default-image:latest
+
+pipelines:
+  default:
+    - step:
+        name: Deploy to Staging
+        script:
+          - apt-get update && apt-get install -y sshpass
+          - sshpass -p "$SSH_PASSWORD" ssh ${HOST_USERNAME}@${HOST} "cd ${SERVER_DIR} && git pull"
